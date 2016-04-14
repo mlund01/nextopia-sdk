@@ -1,0 +1,25 @@
+{
+  "name": "nextopia-ng-sdk",
+  "authors": [
+    "Max Lund <mlund@four51.com>",
+    "Rob Watt <rwatt@four51.com>"
+  ],
+  "description": "Nextopia Client Side Library for AngluarJS Web Apps",
+  "main": "index.js",
+  "moduleType": [],
+  "keywords": [
+    "nextopia",
+    "angular",
+    "ng",
+    "sdk"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
