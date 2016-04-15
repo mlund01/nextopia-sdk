@@ -1,5 +1,6 @@
 {
   "name": "nextopia-ng-sdk",
+  "version": "0.0.2",
   "authors": [
     "Max Lund <mlund@four51.com>",
     "Rob Watt <rwatt@four51.com>"
