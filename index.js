@@ -1,4 +1,4 @@
-angular.module('nextopia-sdk', [])
+angular.module('nextopia-ng-sdk', [])
     .factory("Nextopia", Nextopia);
 
 function Nextopia($resource, nextopia_client_id, $window, $q, $http) {
