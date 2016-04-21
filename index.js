@@ -104,10 +104,15 @@ function Nextopia($resource, nextopia_client_id, $window, $q, $http) {
     }
 
     function combineQueryObjects(custom, global) {
-        var query = global;
+        var query = {};
+        for (var key in global) {
+            query[key] = global[key];
+        }
+        console.log(global);
         for (var key in custom) {
             query[key] = custom[key];
         }
+        console.log(global);
         return query;
     }
 
