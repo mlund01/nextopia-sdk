@@ -94,13 +94,13 @@ function Nextopia($resource, nextopia_client_id, $window, $q, $http) {
             nav_search: 1,
             res_per_page: 1
         };
-        return $resource('http://ecommerce-search.nextopiasoftware.com/return-results.php?', params, {call: {method: "JSONP"}}).call().$promise.then(function(data) {data.results ? delete data.results : angular.noop(); return data});
+        return $resource('https://ecommerce-search.nextopiasoftware.com/return-results.php?', params, {call: {method: "JSONP"}}).call().$promise.then(function(data) {data.results ? delete data.results : angular.noop(); return data});
     }
 
     function _search(custom_params) {
         var final_query = combineQueryObjects(custom_params,global_params);
         final_query.callback = "JSON_CALLBACK";
-        return $resource('http://ecommerce-search.nextopiasoftware.com/return-results.php?json=1', final_query, {call: {method: 'JSONP', headers: {"access-control-allow-origin": $window.location.origin}}}).call().$promise;
+        return $resource('https://ecommerce-search.nextopiasoftware.com/return-results.php?json=1', final_query, {call: {method: 'JSONP', headers: {"access-control-allow-origin": $window.location.origin}}}).call().$promise;
     }
 
     function combineQueryObjects(custom, global) {
